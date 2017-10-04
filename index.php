@@ -49,8 +49,6 @@ and open the template in the editor.
                     </td>
                 </tr>
                 <tr>
-                    
-                    
                     <td class="td-yellow">
                         <label>Li</label>
                     </td>
