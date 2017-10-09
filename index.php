@@ -49,7 +49,7 @@ and open the template in the editor.
             width: 5.55%;
             border-top: 1px solid grey;
             border-left: 1px solid grey;
-        }
+        } 
         .box:last-child { border: 1px solid grey; }
         .box-header span,
         .box span { display: block; }
