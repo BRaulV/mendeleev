@@ -7,10 +7,11 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet" />
         <title></title>
     </head>
-    <style>
-/*        table {
+    <!--<style>
+        table {
             width: 50%;
             height: 450px;
         }
@@ -30,68 +31,67 @@ and open the template in the editor.
         .td-lightcyan { background-color: lightcyan; }
         .l-greenyellow { color: greenyellow }
         .td-no-b { border: 0; }
-        .l-small { font-size: 10px; }*/
-        body{ 
-            text-align: center;
-        }
-        .details { display: inline-flex; border: 1px solid red;}
-        .table { 
-            display: block;
-            border: 1px solid green;
-            width: 51%;
-            margin-left: 24.5%;
-        }
-        .row {
-            height: 70px;
-            display: flex;
-        }
-        .box {
-            width: 5.55%;
-            border-top: 1px solid grey;
-            border-left: 1px solid grey;
-        }
-        .box:last-child { border: 1px solid grey; }
-        .box-header span,
-        .box span { display: block; }
-        .box-yellow { background-color: yellow; }
-        .box-orange { background-color: orange; }
-        .box-lightblue { background-color: lightblue; }
-        .box-lightcyan { background-color: lightcyan; }
-        .box-orangered { background-color: orangered; }
-        .box-header { padding-top: 8px; }
-        /*.box.box-empty { border: 0; }*/
-        .small { font-size: 10px; }
-        .span-bold-r {
-            font-weight: bold;
-            color: red;
-            font-size: 25px;
-        }
-        .span-bold-b {
-            font-weight: bold;
-            color: black;
-            font-size: 25px;
-        }
-        .span-bold-g {
-            font-weight: bold;
-            color: greenyellow;
-            font-size: 25px;
-        }
-    </style>
+        .l-small { font-size: 10px; }
+        
+    </style>-->
     <body>
         <div>
             <h2 class="title">TABELUL PERIODIC AL ELEMENTELOR</h2>
+            <span class="special span-bold-b">GRUPA</span>
+            <span class="special-2">PERIOADA</span>
             <div class="details">
-                <div style="text-align: right; margin-right: 15px;">Denumirea </br> elementului </br> Simbol(stare solida, </br> <span class="span-red">lichida</span>, <span class="span-green">gazoase</span>)</div>
+                <div>Denumirea </br> elementului </br> Simbol(stare solida, </br> <span class="span-red">lichida</span>, <span class="span-green">gazoase</span>)</div>
                 <div class="box-header box-lightblue">
                     <span class="small">hidrogen</span>
                     <span class="small">1</span>
                     <span class="span-red span-bold-r">H</span>
                     <span class="small">1,0079</span>
                 </div>
-                <div style="text-align: left; margin-left: 15px;">Numarul atomic </br></br></br>Masa atomica</div>
+                <div>Numarul atomic </br></br></br>Masa atomica</div>
             </div>
             <div class="table">
                 <div class="row">
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-top"><span class="span-bold-b">18 </span><span class="small">(IIA)</span></div>
+                </div>
+                <div class="row">
+                    <div class="box box-number-left">
+                        <span class="span-bold-b">1</span>
+                    </div>
+                    <div class="box box-top"><span class="span-bold-b">1 </span><span class="small">(IA)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">2 </span><span class="small">(IIA)</span></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-top"><span class="span-bold-b">13 </span><span class="small">(IIIA)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">14 </span><span class="small">(IVA)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">15 </span><span class="small">(VA)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">16 </span><span class="small">(VIA)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">17 </span><span class="small">(VIIA)</span></div>
                     <div class="box box-lightcyan">
                         <span class="small">heliu</span>
                         <span class="small">2</span>
@@ -100,11 +100,8 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="row">
-                    <div class="box box-yellow">
-                        <span class="small">litiu</span>
-                        <span class="small">3</span>
-                        <span class="span-red span-bold-b">Li</span>
-                        <span class="small">6,941</span>
+                    <div class="box box-number-left">
+                        <span class="span-bold-b">2</span>
                     </div>
                     <div class="box box-yellow">
                         <span class="small">litiu</span>
@@ -112,36 +109,22 @@ and open the template in the editor.
                         <span class="span-red span-bold-b">Li</span>
                         <span class="small">6,941</span>
                     </div>
-                    <div class="box box-empty">
-
+                    <div class="box box-yellow">
+                        <span class="small">berilui</span>
+                        <span class="small">3</span>
+                        <span class="span-red span-bold-b">Be</span>
+                        <span class="small">6,941</span>
                     </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
+                    <div class="box box-empty box-dashed-border border-left-grey"></div>
+                    <div class="box box-empty box-dashed-border"></div>
+                    <div class="box box-empty box-dashed-border"></div>
+                    <div class="box box-empty box-dashed-border"></div>
+                    <div class="box box-empty box-dashed-border"></div>
+                    <div class="box box-empty box-dashed-border"></div>
+                    <div class="box box-empty box-dashed-border"></div>
+                    <div class="box box-empty box-dashed-border"></div>
+                    <div class="box box-empty box-dashed-border"></div>
+                    <div class="box box-empty box-dashed-border"></div>
                     <div class="box box-lightblue">
                         <span class="small">bor</span>
                         <span class="small">5</span>
@@ -180,6 +163,9 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="row">
+                    <div class="box box-number-left">
+                        <span class="span-bold-b">3</span>
+                    </div>
                     <div class="box box-yellow">
                         <span class="small">sodiu</span>
                         <span class="small">11</span>
@@ -192,36 +178,16 @@ and open the template in the editor.
                         <span class="span-red span-bold-b">Mg</span>
                         <span class="small">24,305</span>
                     </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
-                    <div class="box box-empty">
-
-                    </div>
+                    <div class="box box-top border-left-grey"><span class="span-bold-b">3 </span><span class="small">(IIIB)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">4 </span><span class="small">(IVB)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">5 </span><span class="small">(VB)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">6 </span><span class="small">(VIB)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">7 </span><span class="small">(VIIB)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">8 </span><span class="small">(VIIIB)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">9 </span><span class="small">(VIIB)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">10 </span><span class="small">(VIIIB)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">11 </span><span class="small">(IB)</span></div>
+                    <div class="box box-top"><span class="span-bold-b">12 </span><span class="small">(IIB)</span></div>
                     <div class="box box-yellow">
                         <span class="small">aluminiu</span>
                         <span class="small">13</span>
@@ -260,6 +226,9 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="row">
+                    <div class="box box-number-left">
+                        <span class="span-bold-b">4</span>
+                    </div>
                     <div class="box box-yellow">
                         <span class="small">potasiu</span>
                         <span class="small">19</span>
@@ -370,6 +339,9 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="row">
+                    <div class="box box-number-left">
+                        <span class="span-bold-b">5</span>
+                    </div>
                     <div class="box box-yellow">
                         <span class="small">rubidiu</span>
                         <span class="small">137</span>
@@ -454,7 +426,7 @@ and open the template in the editor.
                         <span class="span-red span-bold-b">Sn</span>
                         <span class="small">72,64</span>
                     </div>
-                    <div class="box box-lightblue">
+                    <div class="box box-yellow">
                         <span class="small">arsen</span>
                         <span class="small">33</span>
                         <span class="span-red span-bold-b">Sb</span>
@@ -480,6 +452,9 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="row">
+                    <div class="box box-number-left">
+                        <span class="span-bold-b">6</span>
+                    </div>
                     <div class="box box-yellow">
                         <span class="small">potasiu</span>
                         <span class="small">19</span>
@@ -492,11 +467,8 @@ and open the template in the editor.
                         <span class="span-red span-bold-b">Ba</span>
                         <span class="small">40,078</span>
                     </div>
-                    <div class="box box-orangered">
-                        <span class="small"></span>
-                        <span class="small"></span>
-                        <span class="span-red span-bold-b"></span>
-                        <span class="small"></span>
+                    <div class="box box-orangered box-number">
+                        <span class="small">57-71</span>
                     </div>
                     <div class="box box-yellow">
                         <span class="small">vanadiu</span>
@@ -546,43 +518,43 @@ and open the template in the editor.
                         <span class="span-red span-bold-b">Au</span>
                         <span class="small">63,546</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">zinc</span>
                         <span class="small">30</span>
                         <span class="span-red span-bold-b">Hg</span>
                         <span class="small">65,38</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">galiu</span>
                         <span class="small">31</span>
                         <span class="span-red span-bold-g">Ti</span>
                         <span class="small">72,64</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">germaniu</span>
                         <span class="small">32</span>
                         <span class="span-red span-bold-b">Pb</span>
                         <span class="small">72,64</span>
                     </div>
-                    <div class="box box-lightblue">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">arsen</span>
                         <span class="small">33</span>
                         <span class="span-red span-bold-b">Bi</span>
                         <span class="small">74,922</span>
                     </div>
-                    <div class="box box-lightblue">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">selenium</span>
                         <span class="small">34</span>
                         <span class="span-red span-bold-b">Po</span>
                         <span class="small">78,96</span>
                     </div>
-                    <div class="box box-lightblue">
+                    <div class="box box-lightblue border-bottom-grey">
                         <span class="small">brom</span>
                         <span class="small">35</span>
                         <span class="span-red span-bold-b">At</span>
                         <span class="small">79,904</span>
                     </div>
-                    <div class="box box-lightcyan">
+                    <div class="box box-lightcyan border-bottom-grey">
                         <span class="small">kripton</span>
                         <span class="small">36</span>
                         <span class="span-red span-bold-r">Rn</span>
@@ -590,93 +562,296 @@ and open the template in the editor.
                     </div>
                 </div>
                 <div class="row">
-                    <div class="box box-yellow">
+                    <div class="box box-number-left">
+                        <span class="span-bold-b">7</span>
+                    </div>
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">potasiu</span>
                         <span class="small">19</span>
                         <span class="span-red span-bold-b">Fr</span>
                         <span class="small">39,098</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">calciu</span>
                         <span class="small">20</span>
                         <span class="span-red span-bold-b">Ra</span>
                         <span class="small">40,078</span>
                     </div>
-                    <div class="box box-orangered">
-                        <span class="small"></span>
-                        <span class="small"></span>
-                        <span class="span-red span-bold-b"></span>
-                        <span class="small"></span>
+                    <div class="box box-orangered box-number border-bottom-grey">
+                        <span class="small">89-103</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">titan</span>
                         <span class="small">22</span>
                         <span class="span-red span-bold-b">Rf</span>
                         <span class="small">47,867</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">vanadiu</span>
                         <span class="small">23</span>
                         <span class="span-red span-bold-b">Db</span>
                         <span class="small">50,942</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">crom</span>
                         <span class="small">24</span>
                         <span class="span-red span-bold-b">Sg</span>
                         <span class="small">51,996</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">mangan</span>
                         <span class="small">25</span>
                         <span class="span-red span-bold-b">Bh</span>
                         <span class="small">54,938</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">fier</span>
                         <span class="small">26</span>
                         <span class="span-red span-bold-b">Hs</span>
                         <span class="small">55,845</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">cobalt</span>
                         <span class="small">27</span>
                         <span class="span-red span-bold-b">Mt</span>
                         <span class="small">58,933</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">nichel</span>
                         <span class="small">28</span>
                         <span class="span-red span-bold-b">Ds</span>
                         <span class="small">58,693</span>
                     </div>
-                    <div class="box box-yellow">
+                    <div class="box box-yellow border-bottom-grey">
                         <span class="small">cupru</span>
                         <span class="small">29</span>
                         <span class="span-red span-bold-b">Rg</span>
                         <span class="small">63,546</span>
                     </div>
-                    <div class="box box-empty">
-
+                    <div class="box box-empty border-left-grey"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                </div>
+                <div class="row">
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                </div>
+                <div class="row">
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-number-left">
+                        <span class="span-bold-b">6</span>
                     </div>
-                    <div class="box box-empty">
-
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">La</span>
+                        <span class="small">50,942</span>
                     </div>
-                    <div class="box box-empty">
-
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Ce</span>
+                        <span class="small">50,942</span>
                     </div>
-                    <div class="box box-empty">
-
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Pr</span>
+                        <span class="small">50,942</span>
                     </div>
-                    <div class="box box-empty">
-
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Nd</span>
+                        <span class="small">50,942</span>
                     </div>
-                    <div class="box box-empty">
-
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Pm</span>
+                        <span class="small">50,942</span>
                     </div>
-                    <div class="box box-empty">
-
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Sm</span>
+                        <span class="small">50,942</span>
                     </div>
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Eu</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Gd</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Tb</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Dy</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Ho</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Er</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Tm</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Yb</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Lu</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-empty"></div>
+                </div>
+                <div class="row">
+                    <div class="box box-empty"></div>
+                    <div class="box box-empty"></div>
+                    <div class="box box-number-left">
+                        <span class="span-bold-b">7</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Ac</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Th</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Pa</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">U</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Np</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Pu</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Am</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Cm</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Bk</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Cf</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Es</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Fm</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Md</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">No</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-orangered border-bottom-grey">
+                        <span class="small">vanadiu</span>
+                        <span class="small">23</span>
+                        <span class="span-red span-bold-b">Lr</span>
+                        <span class="small">50,942</span>
+                    </div>
+                    <div class="box box-empty"></div>
                 </div>
             </div>
         </div>
@@ -1050,5 +1225,8 @@ and open the template in the editor.
                 </tr>
             </tbody>
         </table>-->
+        
+        
+        <script src="js/global.js" type="text/javascript"></script>
     </body>
 </html>
